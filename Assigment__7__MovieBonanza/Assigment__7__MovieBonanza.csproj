@@ -52,8 +52,20 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +88,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cedarrapids.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\companymen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deathrace2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\footloose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnomeoandjuliet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iamnumberfour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\justgowithit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nostringsattached.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\realsteel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanctum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seasonofthewitch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thedilemma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theeagle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thegreenhornet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\themechanic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theotherwoman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\therite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theroommate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thewayback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waitingforever.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
