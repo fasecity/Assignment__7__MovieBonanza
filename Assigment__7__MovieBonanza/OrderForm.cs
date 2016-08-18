@@ -96,5 +96,16 @@ namespace Assigment__7__MovieBonanza
             //show dialog
             aboutbox.ShowDialog();
         }
+
+        private void StreamButton_Click(object sender, EventArgs e)
+        {
+            StreamForm streamform = new StreamForm();
+            streamform.orderformprop1 = this;
+            streamform.StreamCosttextBox1.Text = GrandTotalTextBox.Text;
+            streamform.StreamTitletextBox2.Text = TitleTextBox2.Text;
+            streamform.Show();
+            this.Hide();
+
+        }
     }
 }

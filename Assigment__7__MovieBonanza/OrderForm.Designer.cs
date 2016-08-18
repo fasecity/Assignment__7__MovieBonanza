@@ -273,19 +273,19 @@
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 30);
             this.printToolStripMenuItem.Text = "Print";
             // 
             // streamToolStripMenuItem
             // 
             this.streamToolStripMenuItem.Name = "streamToolStripMenuItem";
-            this.streamToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.streamToolStripMenuItem.Size = new System.Drawing.Size(152, 30);
             this.streamToolStripMenuItem.Text = "Stream";
             // 
             // cancelToolStripMenuItem
             // 
             this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
-            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(152, 30);
             this.cancelToolStripMenuItem.Text = "Cancel";
             this.cancelToolStripMenuItem.Click += new System.EventHandler(this.Cancelbutton_Click);
             // 
@@ -313,12 +313,14 @@
             this.StreamButton.TabIndex = 8;
             this.StreamButton.Text = "stream";
             this.StreamButton.UseVisualStyleBackColor = true;
+            this.StreamButton.Click += new System.EventHandler(this.StreamButton_Click);
             // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 644);
+            this.ControlBox = false;
             this.Controls.Add(this.StreamButton);
             this.Controls.Add(this.Cancelbutton);
             this.Controls.Add(this.groupBox2);
@@ -326,7 +328,11 @@
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "OrderForm";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrderForm";
             this.Load += new System.EventHandler(this.OrderForm_Load);
             this.groupBox1.ResumeLayout(false);
