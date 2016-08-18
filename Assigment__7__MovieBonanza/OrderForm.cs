@@ -91,7 +91,10 @@ namespace Assigment__7__MovieBonanza
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            //insatiate
+            AboutBox aboutbox = new AboutBox();
+            //show dialog
+            aboutbox.ShowDialog();
         }
     }
 }

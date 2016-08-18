@@ -23,7 +23,7 @@ namespace Assigment__7__MovieBonanza
             //listBox1.Show(listBox1.Text);
             TitleTextBox.Text = listBox1.SelectedItem.ToString();
             if (listBox1.SelectedIndex == 0)
-            {
+            {    
                 CategoryTextBox.Text = "comedy";
                 Convert.ToDouble(CostTextBox.Text = "1.99");
                 pictureBox1.Image = Resources.cedarrapids;
@@ -149,6 +149,11 @@ namespace Assigment__7__MovieBonanza
             orderForm.CostTextBox2.Text = CostTextBox.Text;
             orderForm.Show();
             this.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            listBox1.SelectedIndex = 0;
         }
     }
 }

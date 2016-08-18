@@ -127,9 +127,9 @@
             // NextButton
             // 
             this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextButton.Location = new System.Drawing.Point(523, 487);
+            this.NextButton.Location = new System.Drawing.Point(523, 471);
             this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(143, 45);
+            this.NextButton.Size = new System.Drawing.Size(143, 61);
             this.NextButton.TabIndex = 2;
             this.NextButton.Text = "next";
             this.NextButton.UseVisualStyleBackColor = true;
@@ -145,6 +145,7 @@
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
             this.Text = "Movie Bonanza";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
