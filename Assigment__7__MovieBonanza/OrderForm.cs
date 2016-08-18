@@ -16,12 +16,51 @@ namespace Assigment__7__MovieBonanza
         public OrderForm()
         {
             InitializeComponent();
+            
         }
 
         private void backButton_Click(object sender, EventArgs e)
         {
             this.Form1Prop.Show();
             this.Close();
+        }
+
+        private void SubtotaltextBox_TextChanged(object sender, EventArgs e)
+        {
+           
+           
+
+            
+            
+        }
+
+        private void OrderForm_Load(object sender, EventArgs e)
+        {
+             double tax = Convert.ToDouble(SubtotaltextBox.Text) * 0.13;
+           tax = Math.Round(tax, 2);
+            SubtotaltextBox.Text = tax.ToString();
+            double subtotes = Convert.ToDouble(CostTextBox2.Text);
+            subtotes = Math.Round(subtotes, 2);
+            AddtenTextbox.Text = subtotes.ToString();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked ==true)
+            {
+                double subtotes = Convert.ToDouble(CostTextBox2.Text);
+                subtotes = subtotes + 10;
+                subtotes = Math.Round(subtotes, 2);
+                AddtenTextbox.Text = subtotes.ToString();
+            }
+            if (checkBox1.Checked == false)
+            {
+                double subtotes = Convert.ToDouble(CostTextBox2.Text);
+               
+                subtotes = Math.Round(subtotes, 2);
+                AddtenTextbox.Text = subtotes.ToString();
+            }
+
         }
     }
 }

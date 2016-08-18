@@ -58,7 +58,13 @@
             "Season of the Witch",
             "The Dilemma",
             "The Eagle",
-            "The Green hornet"});
+            "The Green hornet",
+            "The Mechanic",
+            "The Other Woman",
+            "The Rite",
+            "The Roommate",
+            "The Way Back",
+            "Waiting for Forever"});
             this.listBox1.Location = new System.Drawing.Point(12, 72);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(240, 342);
