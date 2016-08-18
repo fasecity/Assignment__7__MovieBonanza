@@ -142,10 +142,10 @@ namespace Assigment__7__MovieBonanza
         {
             OrderForm orderForm = new OrderForm();
             orderForm.Form1Prop = this;
-            //orderForm.TitleTextBox.Text = listBox1.SelectedItem.ToString();
-            //orderForm.CategoryTextBox.Text = CategoryTextBox.Text;
-            //orderForm.pictureBox1.Image = pictureBox1.Image;
-            //orderForm.CostTextBox.Text = CostTextBox.Text;
+            orderForm.TitleTextBox2.Text = listBox1.SelectedItem.ToString();
+            orderForm.CategoryTextBox2.Text = CategoryTextBox.Text;
+            orderForm.pictureBox2.Image = pictureBox1.Image;
+            orderForm.CostTextBox2.Text = CostTextBox.Text;
             orderForm.Show();
             this.Hide();
         }
