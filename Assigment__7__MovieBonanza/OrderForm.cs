@@ -42,6 +42,16 @@ namespace Assigment__7__MovieBonanza
             double subtotes = Convert.ToDouble(CostTextBox2.Text);
             subtotes = Math.Round(subtotes, 2);
             AddtenTextbox.Text = subtotes.ToString();
+            //if (string.IsNullOrEmpty(GrandTotalTextBox.Text)
+            
+                double dday = tax + subtotes;
+                GrandTotalTextBox.Text = dday.ToString();
+            
+
+            
+
+           
+            
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -52,6 +62,11 @@ namespace Assigment__7__MovieBonanza
                 subtotes = subtotes + 10;
                 subtotes = Math.Round(subtotes, 2);
                 AddtenTextbox.Text = subtotes.ToString();
+
+                double tax = Convert.ToDouble(SubtotaltextBox.Text) * 0.13;
+                tax = Math.Round(tax, 2);
+                double dday = tax + subtotes;
+                GrandTotalTextBox.Text = dday.ToString();
             }
             if (checkBox1.Checked == false)
             {
@@ -59,6 +74,11 @@ namespace Assigment__7__MovieBonanza
                
                 subtotes = Math.Round(subtotes, 2);
                 AddtenTextbox.Text = subtotes.ToString();
+
+                double tax = Convert.ToDouble(SubtotaltextBox.Text) * 0.13;
+                tax = Math.Round(tax, 2);
+                double dday = tax + subtotes;
+                GrandTotalTextBox.Text = dday.ToString();
             }
 
         }
