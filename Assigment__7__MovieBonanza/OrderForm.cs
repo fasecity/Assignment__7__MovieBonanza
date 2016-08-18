@@ -22,7 +22,7 @@ namespace Assigment__7__MovieBonanza
         private void backButton_Click(object sender, EventArgs e)
         {
             this.Form1Prop.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void SubtotaltextBox_TextChanged(object sender, EventArgs e)
@@ -80,6 +80,17 @@ namespace Assigment__7__MovieBonanza
                 double dday = tax + subtotes;
                 GrandTotalTextBox.Text = dday.ToString();
             }
+
+        }
+
+        private void Cancelbutton_Click(object sender, EventArgs e)
+        {
+            this.Form1Prop.Show();
+            this.Close();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
         }
     }
