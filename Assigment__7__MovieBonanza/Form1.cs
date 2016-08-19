@@ -8,7 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// Assignment 7 : Movie bonanza
+/// Mohamoud Mohamed
+/// 300 435 435
+/// v.1
+/// </summary>
 namespace Assigment__7__MovieBonanza
 {
     public partial class Form1 : Form
@@ -17,10 +22,17 @@ namespace Assigment__7__MovieBonanza
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// when the list box index is selected the the data from it is
+        /// is changed in cost,picbox and category using if conditional staments
+        /// to pass in a string to them
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //listBox1.Show(listBox1.Text);
+            //if statments that use the listbox index selected
+            //to pass  string data  to catagory image and title
             TitleTextBox.Text = listBox1.SelectedItem.ToString();
             if (listBox1.SelectedIndex == 0)
             {    
@@ -140,8 +152,11 @@ namespace Assigment__7__MovieBonanza
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            //initialize
             OrderForm orderForm = new OrderForm();
+            //call
             orderForm.Form1Prop = this;
+            //pass data and open new form and hide form1
             orderForm.TitleTextBox2.Text = listBox1.SelectedItem.ToString();
             orderForm.CategoryTextBox2.Text = CategoryTextBox.Text;
             orderForm.pictureBox2.Image = pictureBox1.Image;
@@ -150,7 +165,11 @@ namespace Assigment__7__MovieBonanza
             orderForm.Show();
             this.Hide();
         }
-
+        /// <summary>
+        /// this sets the default so an index is selected
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
             listBox1.SelectedIndex = 0;
