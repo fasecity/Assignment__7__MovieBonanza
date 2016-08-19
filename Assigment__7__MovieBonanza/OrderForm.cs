@@ -107,5 +107,10 @@ namespace Assigment__7__MovieBonanza
             this.Hide();
 
         }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(" Your order is printing");
+        }
     }
 }
